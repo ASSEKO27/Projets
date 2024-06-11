@@ -37,13 +37,26 @@ class Productscontroller extends Controller
         "name"=> "required|max:100| unique:products",
         "description"=>"required",
         "price"=>"numeric|required",
-        "photos1"=>"image|required|max:2048",
-        "photos2"=>"image|required|max:2048",
-        "category_id"=>"required",
+        "photos1"=>"image|required|mimes: jpeg,png,jpg,gif|max:2048",
+        "photos2"=>"image|required|mimes: jpeg,png,jpg,gif|max:2048",
+        "category_id"=>"required | numeric",
 
 
     ]);
-        product::create($request->all());
+    $inputs=$request->all();
+    if ($photos1=$request->file("photos1")){
+        $newfile1=time().".".$photos1->getClientOriginalExtension();
+        $photos1->move('images/products/',$newfile1);
+        $inputs['photos1']=$newfile1;
+    }
+    if ($photos2=$request->file("photos2")){
+        $newfile2=time().time().".".$photos1->getClientOriginalExtension();
+        $photos2->move('images/products/',$newfile2);
+        $inputs['photos2']=$newfile2;
+    }
+
+
+        product::create($inputs);
 
         return redirect()->route ("products.index")->with("message","un nouveau produit a été ajoutée avec succes !");
 
@@ -62,7 +75,9 @@ class Productscontroller extends Controller
      */
     public function edit(product $product)
     {
-        return view ("admin.products.edit", compact("product"));
+        $categories=Category::all();
+        return view ("admin.products.edit", compact("product","categories"));
+
     }
 
     /**
@@ -74,13 +89,35 @@ class Productscontroller extends Controller
             "name"=> "required|max:100|",
             "description"=>"required",
             "price"=>"numeric",
-            "photos1"=>"image|required|max:2048",
-            "photos2"=>"image|required|max:2048",
+            "photos1"=>"image|mimes: jpeg,png,jpg,gif|max:2048",
+            "photos2"=>"image|mimes: jpeg,png,jpg,gif|max:2048",
             "category_id"=>"required",
 
 
         ]);
-            $product->update($request->all());
+        $inputs=$request->all();
+
+        if ($photos1=$request->file("photos1")){
+
+        $newfile1=time().".".$photos1->getClientOriginalExtension();
+        //ecraser l'ancienne photo
+        if(file_exists("images/products/".$product->photos1)){
+        unlink("images/products/".$product->photos1);
+        }
+
+        $photos1->move('images/products/',$newfile1);
+        $inputs['photos1']=$newfile1;
+        }
+
+        if ($photos2=$request->file("photos2")){
+            if(file_exists("images/products/".$product->photos2)){
+                unlink("images/products/".$product->photos2);
+                }
+        $newfile2=time().time().".".$photos2->getClientOriginalExtension();
+        $photos2->move('images/products/',$newfile2);
+        $inputs['photos2']=$newfile2;
+        }
+            $product->update($inputs);
 
             return redirect()->route ("products.index")->with("message","le produit est modifié avec succes !");
 
@@ -91,9 +128,16 @@ class Productscontroller extends Controller
      */
     public function destroy(product $product)
     {
+        if(file_exists("images/products/".$product->photos1)){
+            unlink("images/products/".$product->photos1);
+            }
+
+                if(file_exists("images/products/".$product->photos2)){
+                    unlink("images/products/".$product->photos2);
+                    }
         $product->delete();
 
-        return redirect()->route("product.index")->with("message","un produit est supprimé avec succès !");
+        return redirect()->route("products.index")->with("message","un produit est supprimé avec succès !");
     }
 
 }

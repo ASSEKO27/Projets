@@ -29,11 +29,11 @@
 <!--fin slider-->
 
 <!-- debut banner-->
-@include('layouts.banner')
+{{-- @include('layouts.banner') --}}
 <!--fin banner-->
 
 <!--debut product-->
-<div class="product-area pb-120 bg-img pt-120" style="background-image:url(assets/img/bg/section-bg-2.png);">
+{{-- <div class="product-area pb-120 bg-img pt-120" style="background-image:url(assets/img/bg/section-bg-2.png);">
     <div class="container">
         <div class="product-top-bar section-border mb-60">
             <div class="section-title-4">
@@ -593,12 +593,12 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!--fin product-->
 
 
 <!--debut deal-->
-<div class="deal-area pt-90 pb-100">
+{{-- <div class="deal-area pt-90 pb-100">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6">
@@ -619,11 +619,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!--fin deal-->
 
 <!--testimonial-->
-<div class="testimonial-area bg-img pt-100 pb-95" style="background-image:url({{asset('assets/img/bg/section-bg-3.png')}});">
+{{-- <div class="testimonial-area bg-img pt-100 pb-95" style="background-image:url({{asset('assets/img/bg/section-bg-3.png')}});">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 ms-auto me-auto">
@@ -650,11 +650,11 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!--testimonial-->
 
 <!-- debut product-->
-<div class="product-area pb-70 pt-100">
+{{-- <div class="product-area pb-70 pt-100">
     <div class="container">
         <div class="product-top-bar section-border mb-60">
             <div class="section-title-4">
@@ -1202,7 +1202,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!--fin product -->
 
 <!--debut subscribe-->

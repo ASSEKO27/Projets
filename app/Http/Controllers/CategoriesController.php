@@ -70,7 +70,7 @@ class CategoriesController extends Controller
         $request->validate([
             'name'=> 'required',
         ]);
-        
+
         //mise a jour avec eloquent
         $category->update($request->all());
 
@@ -85,6 +85,7 @@ class CategoriesController extends Controller
     {
         $category->delete();
 
-    return redirect()->route("categories.index")->with("message","une categorie est supprimée avec succès !");
+    return redirect()->route("categories.index")->with("message","une categorie est supprimée avec succès !");}
+
 }
-}
+

@@ -61,7 +61,7 @@
                 <h4>Total : <span class="shop-total">$260.00</span></h4>
             </div>
             <div class="shopping-cart-btn btn-hover text-center">
-                <a class="default-btn" href="cart-page.html">view cart</a>
+                <a class="default-btn" href="{{route('panier.panier')}}">view cart</a>
                 <a class="default-btn" href="checkout.html">checkout</a>
             </div>
         </div>

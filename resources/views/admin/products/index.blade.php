@@ -18,7 +18,8 @@
 
                   <thead>
                   <tr>
-                    <th>Photo</th>
+                    <th>Photo1</th>
+                    <th>Photo2</th>
                     <th>name</th>
                     <th>description</th>
                     <th>price</th>
@@ -31,7 +32,8 @@
                  @forelse ($products as $product )
 
                 <tr>
-                  <td>{{$product->photos1}}</td>
+                  <td><img width="100" src="{{asset('images/products/'.$product->photos1)}}"></td>
+                  <td><img width="100" src="{{asset('images/products/'.$product->photos2)}}"></td>
                   <td>{{$product->name}}</td>
                   <td>{{$product->description}}</td>
                   <td>{{$product->price}}</td>
@@ -58,8 +60,8 @@
                   <tfoot>
                   <tr>
 
-                  <th>name</th>
-                  <th>action</th>
+                  <th colspan="7"></th>
+                  <!--<th>action</th>-->
 
                   </tr>
                   </tfoot>
