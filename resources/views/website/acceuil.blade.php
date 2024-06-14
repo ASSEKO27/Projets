@@ -1210,7 +1210,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-5 col-lg-7 col-md-10 ms-auto me-auto">
-                <div class="subscribe-style-3 text-center">
+                {{-- <div class="subscribe-style-3 text-center">
                     <h2>Subscribe </h2>
                     <p>Subscribe to our newsletter to receive news on update</p>
                     <div id="mc_embed_signup" class="subscribe-form-3 mt-35">
@@ -1226,7 +1226,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

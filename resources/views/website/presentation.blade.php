@@ -42,14 +42,16 @@ page presentation
 <div class="welcome-area pt-100 pb-95">
     <div class="container">
         <div class="welcome-content text-center">
-            <h5>Who Are We</h5>
+            {{-- <h5>Who Are We</h5> --}}
             <h1>Welcome To Flone</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo consequat irure </p>
+            <p> Découvrez notre boutique en ligne de vêtements tendance où style et qualité se rencontrent. Explorez une collection variée pour hommes, femmes et enfants, adaptée à toutes les occasions. Profitez d'offres exclusives et d'une livraison rapide pour une expérience d'achat inégalée.Notre site propose des articles soigneusement sélectionnés, allant des tenues décontractées aux vêtements de soirée élégants. Nous collaborons avec des marques renommées pour vous garantir des produits de haute qualité. Chaque semaine, de nouvelles collections arrivent pour suivre les dernières tendances de la mode.
+
+                Grâce à notre interface conviviale, trouvez facilement ce que vous cherchez avec des filtres par taille, couleur et style. Notre service client est disponible 24/7 pour répondre à toutes vos questions et vous assister dans vos achats</p>
         </div>
     </div>
 </div>
 
-<div class="banner-area pb-70">
+{{-- <div class="banner-area pb-70">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4">
@@ -84,11 +86,11 @@ page presentation
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class="about-mission-area pb-70">
     <div class="container">
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-4 col-md-4">
                 <div class="single-mission mb-30">
                     <h3>Our vission</h3>
@@ -107,11 +109,11 @@ page presentation
                     <p>Flone provide how all this mistaken idea of denounc pleasure and sing pain was born an will give you a ete account of the system, and expound the actual teangs the eat explorer of the truth.</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 
-<div class="funfact-area bg-gray-3 pt-100 pb-70">
+{{-- <div class="funfact-area bg-gray-3 pt-100 pb-70">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -152,15 +154,15 @@ page presentation
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <div class="team-area pt-95 pb-70">
     <div class="container">
-        <div class="section-title-2 text-center mb-60">
+        {{-- <div class="section-title-2 text-center mb-60">
             <h2>Team Members</h2>
             <p>Lorem ipsum dolor sit amet conse ctetu.</p>
-        </div>
-        <div class="row">
+        </div> --}}
+        {{-- <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="team-wrapper mb-30">
                     <div class="team-img">
@@ -257,7 +259,7 @@ page presentation
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 

@@ -1,5 +1,5 @@
 <div class="header-right-wrap">
-    <div class="same-style header-search">
+    {{-- <div class="same-style header-search">
         <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
         <div class="search-content">
             <form action="#">
@@ -7,8 +7,8 @@
                 <button class="button-search"><i class="pe-7s-search"></i></button>
             </form>
         </div>
-    </div>
-    <div class="same-style account-satting">
+    </div> --}}
+    {{-- <div class="same-style account-satting">
         <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
         <div class="account-dropdown">
             <ul>
@@ -18,10 +18,10 @@
                 <li><a href="my-account.html">my account</a></li>
             </ul>
         </div>
-    </div>
-    <div class="same-style header-wishlist">
+    </div> --}}
+    {{-- <div class="same-style header-wishlist">
         <a href="wishlist.html"><i class="pe-7s-like"></i></a>
-    </div>
+    </div> --}}
     <div class="same-style cart-wrap">
         <button class="icon-cart">
             <i class="pe-7s-shopbag"></i>

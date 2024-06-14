@@ -50,7 +50,7 @@ page produit
                   @endif
 
                 <div class="shop-top-bar">
-                    <div class="select-shoing-wrap">
+                    {{-- <div class="select-shoing-wrap">
                         <div class="shop-select">
                             <select>
                                 <option value="">Sort by newness</option>
@@ -60,7 +60,7 @@ page produit
                             </select>
                         </div>
                         <p>Showing 1–12 of 20 result</p>
-                    </div>
+                    </div> --}}
                     {{-- <div class="shop-tab nav">
                         <a href="#shop-1" data-bs-toggle="tab">
                             <i class="fa fa-table"></i>
@@ -299,7 +299,7 @@ page produit
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            {{-- <div class="col-lg-3">
                 <div class="sidebar-style mr-30">
                     <div class="sidebar-widget">
                         <h4 class="pro-sidebar-title">Search </h4>
@@ -421,7 +421,7 @@ page produit
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

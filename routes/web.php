@@ -24,6 +24,8 @@ Route::get ('/',[WebsiteController::class,'Acceuil'])->name('website.Acceuil');
 Route::get('/contact',[WebsiteController::class,'Contact'])->name('website.Contact');
 Route::get('/presentation',[WebsiteController::class,'Presentation'])->name('website.Presentation');
 Route::get('/produits',[WebsiteController::class,'Produits'])->name('website.Produits');
+Route::get('/checkout',[WebsiteController::class,'checkout'])->name('website.checkout');
+
 
 //les routes seront accessibles que pour les utilisateurs authentifier
 Route::middleware(['auth'])->group(function (){

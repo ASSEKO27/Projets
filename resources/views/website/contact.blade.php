@@ -37,11 +37,11 @@ page contact
 
 <div class="contact-area pt-100 pb-100">
     <div class="container">
-        <div class="contact-map mb-10">
+        {{-- <div class="contact-map mb-10">
             <div id="map"></div>
-        </div>
+        </div> --}}
         <div class="custom-row-2">
-            <div class="col-lg-4 col-md-5">
+            {{-- <div class="col-lg-4 col-md-5">
                 <div class="contact-info-wrap">
                     <div class="single-contact-info">
                         <div class="contact-icon">
@@ -81,7 +81,7 @@ page contact
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-lg-8 col-md-7">
                 <div class="contact-form">
                     <div class="contact-title mb-30">

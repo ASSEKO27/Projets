@@ -24,7 +24,7 @@
 
 <body>
 <header class="header-area clearfix">
-    <div class="header-top-area border-none header-padding-2">
+    {{-- <div class="header-top-area border-none header-padding-2">
         <div class="container-fluid">
             <div class="header-top-wap border-bottom-1">
                 <div class="language-currency-wrap">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="header-bottom sticky-bar header-res-padding header-padding-2">
         <div class="container-fluid">
             <div class="row">
@@ -274,7 +274,7 @@
                                 <div class="pro-details-wishlist">
                                     <a href="#"><i class="fa fa-heart-o"></i></a>
                                 </div>
-                                <div class="pro-details-compare">
+                                 <div class="pro-details-compare">
                                     <a href="#"><i class="pe-7s-shuffle"></i></a>
                                 </div>
                             </div>
